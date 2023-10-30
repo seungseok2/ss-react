@@ -1,18 +1,35 @@
-import { useState } from "react";
+import React, { useState } from 'react';
 
 function Exam04(){
-
-    const[text, setText]=useState(0);
-
-    return(
-        <>
-        <h3>네 번째 예제</h3>
-
-        <h4>(Q)주말에 뭐하세요?</h4>
-
-        <input type="text"/>
-        </>
-    );
-};
-
+    
+      const [text, setText] = useState('');
+      const [byteCount, setByteCount] = useState(0);
+      const maxByte = 1000; // 최대 바이트 수
+    
+      const handleTextChange = (event) => {
+        const inputText = event.target.value;
+        const encoder = new TextEncoder();
+        const textBytes = encoder.encode(inputText);
+        const currentByteCount = textBytes.length;
+    
+        if (currentByteCount <= maxByte) {
+          setText(inputText);
+          setByteCount(currentByteCount);
+        }
+      };
+    
+      return (
+        <div>
+          <textarea
+            value={text}
+            onChange={handleTextChange}
+            placeholder="  입력하세요"
+          />
+          <div>
+            {byteCount} / {maxByte} 바이트
+          </div>
+        </div>
+      );
+    }
+    
 export default Exam04;
