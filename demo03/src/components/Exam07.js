@@ -69,8 +69,8 @@ const Exam07 = ()=>{
                                         `}// == 이게 두개면 긍정적인 답 진짜 true먄 === 3개
                                     value={member.memberId} onChange={changeMember}
                                                             onBlur={checkMember}/>
-                                <div className="valid-feedback">good boy</div>
-                                <div className="invalid-feedback">bad boy</div>
+                                <div className="valid-feedback">good</div>
+                                <div className="invalid-feedback">bad</div>
                         </div>
                     </div>
 
@@ -85,8 +85,8 @@ const Exam07 = ()=>{
                                     `}
                                     value={member.memberPw} onChange={changeMember}
                                                             onBlur={checkMember}/>
-                                <div className="valid-feedback">good boy</div>
-                                <div className="invalid-feedback">bad boy</div>
+                                <div className="valid-feedback">good</div>
+                                <div className="invalid-feedback">bad</div>
                         </div>
                     </div>
 
@@ -101,8 +101,8 @@ const Exam07 = ()=>{
                                         `}
                                     value={member.memberPwRe} onChange={changeMember}
                                                                 onBlur={checkMember}/>
-                                <div className="valid-feedback">good boy</div>
-                                <div className="invalid-feedback">bad boy</div>
+                                <div className="valid-feedback">good</div>
+                                <div className="invalid-feedback">bad</div>
                         </div>
                     </div>
 
