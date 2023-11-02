@@ -9,6 +9,7 @@ import Exam06 from './components/Exam06';
 import Exam07 from './components/Exam07';
 import Exam08 from './components/Exam08';
 import Exam09 from './components/Exam09';
+import Exam10 from './components/Exam10';
 import ExamHeader from './components/ExamHeader';
 import ExamHome from './components/ExamHome';
 import Examtest from './components/Examtest';
@@ -37,9 +38,13 @@ function App() {
     <ExamHome/>
     <hr/>
     <Examtest/> */}
+    <hr/>
     <Exam08/>
+    <hr/> 
     <Exam09/>
-
+    <hr/> 
+    <Exam10/>
+    <hr/> 
     <div className="my-5 py-5"></div>
     </>
   );
