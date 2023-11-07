@@ -126,7 +126,7 @@ const Pocketmon = (props)=>{
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title" id="exampleModalLabel">일정 변경</h5>
-              <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+              <button type="button" className="border-0 bg-transparent" onClick={closeModal}>
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
