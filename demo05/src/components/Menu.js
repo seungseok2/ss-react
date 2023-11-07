@@ -21,7 +21,10 @@ const Menu = (props) => {
                             </li>
                             <li className="nav-item">
                                 <NavLink className={`nav-link ${location.pathname === '/book' ? 'active' : ''}`} to="/book">book</NavLink>
-                                </li>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className={`nav-link ${location.pathname === '/book2' ? 'active' : ''}`} to="/book2">book(loop)</NavLink>
+                            </li>
                         </ul>
                     </div>
                 </div>
